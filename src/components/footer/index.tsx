@@ -20,7 +20,10 @@ const Footer = () => {
               <img className="logApiWeather" src="/assets/images/logoAPIWeather.png" alt="Logo api weather" />
           </div>
         </div>
+        <hr></hr>
+        <p>@ 2021 desgin by team SCKTTTP</p>
       </section>
+      
     </div>
   );
 };

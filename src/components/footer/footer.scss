@@ -1,7 +1,7 @@
 .footer-container {
     background-color: #3d3d3d; /* Dành cho các trình duyệt không hỗ trợ gradient*/
     background-image: linear-gradient(to bottom right, #3d3d3d, #778ca3); 
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,4 +165,6 @@
   
   @media screen and (max-width: 768px) {
   }
-  
+  .footer-container p{
+    text-align: center;
+  }

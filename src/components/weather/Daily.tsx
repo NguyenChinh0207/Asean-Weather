@@ -37,7 +37,6 @@ function Daily() {
                 {/* <span>thứ 2 đến CN </span> */}
                 <span className="sub">{dateForrmat(item.date)}</span>
               </h2>
-              <div className="responsive">
               <div className="d-flex align-items-center">
                 <img
                   alt=""
@@ -56,8 +55,6 @@ function Daily() {
                 </div>
               </div>
               <span className="real-feel">{item.day.condition.text}</span>
-              </div>
-              
               <div className="precip">
                 <img
                   alt="rain drop"

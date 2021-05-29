@@ -5,6 +5,7 @@
 }
 .favourite-wrap{
     justify-content: center;
+
 }
 .favourite-item{
     margin-right: 12px;
@@ -41,3 +42,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+ @media screen and (max-width:676px) {
+    .favourite-wrap{
+        flex-direction: column;
+    
+    }
+    
+ }

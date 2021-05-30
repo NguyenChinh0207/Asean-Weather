@@ -6,23 +6,11 @@
     margin-top: 12px; 
 }
 
-// .Box-cha{
-//     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
-//      box-sizing: inherit; 
-//      margin-bottom: 10px; 
-//      padding: 20px; 
-//      box-sizing: inherit; 
-//      line-height: 1.6em; 
-//      padding: 15px; 
-//      background-color: white;
-     
-// }
 .daily-wrap{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 .daily-wrap .box-daily{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
@@ -51,53 +39,69 @@
     border-radius: 2px;
 }
 
-.hourly-card-nfl-header .date span {
+.condition-daily-wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.daily-card-nfl-header .date {
+    min-width: 52px;
+    font-size: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.daily-card-nfl-header .date .sub {
+    color: #0097e6;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.daily-card-nfl-header .date span {
     display: block;
 }
 
-.hourly-card-nfl-header .icon {
-    width: 77px;
-    height: 77px;
+.daily-card-nfl-header .icon {
+    width: 140px;
+    height: 100%;
     margin-right: 8px;
 }
 
-.hourly-card-nfl-header .temp {
+.daily-card-nfl-header .temp {
     white-space: nowrap;
     font-weight: 500;
     font-size: 26px;
-    line-height: 1.08;
-    width: 48px;
     text-align: center;
-    margin-right: 8px;
 }
 
-.hourly-card-nfl-header .real-feel {
+.condition-text{
+    color: #0097e6;
+    font-weight: bold;
     font-size: 20px;
-    font-weight: 500;
-    color: black;
-    margin-right: 8px;
 }
 
-.hourly-card-nfl-header .phrase {
+.daily-card-nfl-header .phrase {
     display: none;
     font-size: 18px;
     line-height: 1.22;
 }
 
-.hourly-card-nfl-header .precip {
+.daily-card-nfl-header .precip {
     font-size: 20px;
     font-weight: 700;
     color: #878787;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    margin-right: 8px;
+    margin: 15px 0;
     width: 50px;
     -webkit-box-pack: center;
     justify-content: center;
 }
 
-.hourly-card-nfl-header .arrow {
+.daily-card-nfl-header .arrow {
     fill: #000;
 }
 
@@ -129,37 +133,20 @@
 .modalDaily{
     width: 80%;
 }
-.responsive{
-    width: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.view-daily-detail-btn{
+    margin: 10px 0;
+    border:none;
+    background-color: #1e90ff ;
+    color: white;
+    border-radius: 14px;
+    padding: 10px 20px;
 }
-.daily-card-nfl-header .date .sub {
-    color: #0097e6;
-    font-weight: 700;
-    font-size: 25px;
-}
-
-.daily-card-nfl-header .date span {
-    display: block;
+.view-daily-detail-btn i{
+    color: white;
+    margin-left: 4px;
 }
 
-.daily-card-nfl-header .icon {
-    width: 140px;
-    height: 100%;
-    margin-right: 8px;
-}
-
-.daily-card-nfl-header .temp {
-    white-space: nowrap;
-    font-weight: 500;
-    font-size: 26px;
-    text-align: center;
-}
-
-.condition-text{
-    color: #0097e6;
-    font-weight: bold;
-    font-size: 20px;
-}
+// .weather-icon{
+//     width: 150px;
+//     height: 100%;
+// }

@@ -6,20 +6,41 @@
     margin-top: 12px; 
 }
 
-.Box-cha{
+// .Box-cha{
+//     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+//      box-sizing: inherit; 
+//      margin-bottom: 10px; 
+//      padding: 20px; 
+//      box-sizing: inherit; 
+//      line-height: 1.6em; 
+//      padding: 15px; 
+//      background-color: white;
+     
+// }
+.daily-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.daily-wrap .box-daily{
     box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+    border-radius: 5px;
+    flex-grow: 1;
      box-sizing: inherit; 
-     margin-bottom: 10px; 
-     padding: 20px; 
-     box-sizing: inherit; 
+     margin-left: 38px;
      line-height: 1.6em; 
      padding: 15px; 
      background-color: white;
-     
+}
+.daily-wrap .box-daily:nth-child(1){
+    margin-left: 0;
 }
 
-.hourly-card-nfl-header {
+.daily-card-nfl-header {
     display: flex;
+    flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
     color: #1f1f1f;
@@ -28,18 +49,6 @@
     -webkit-box-pack: justify;
     justify-content: space-between;
     border-radius: 2px;
-}
-
-.hourly-card-nfl-header .date {
-    min-width: 52px;
-    font-size: 20px;
-    font-weight: 700;
-    white-space: nowrap;
-}
-
-.hourly-card-nfl-header .date .sub {
-    color: #8b8b8b;
-    font-weight: 400;
 }
 
 .hourly-card-nfl-header .date span {
@@ -126,36 +135,31 @@
     align-items: center;
     justify-content: space-between;
 }
-.hourly-card-nfl-header .temp {
-   
-    width: 100%;
-   
-}
-@media (max-width:768px) {
-    .responsive{
-        width: 53%;
-        flex-direction: column;
-    }
-    
+.daily-card-nfl-header .date .sub {
+    color: #0097e6;
+    font-weight: 700;
+    font-size: 25px;
 }
 
-@media (max-width:992px) {
-    .hourly-card-nfl-header .icon {
-        width: 100%;
-        height: 100%;
-        margin-right: 8px;
-    }
-    .temp .high {
-        font-size: 22px;
-        line-height: 1.08;
-        font-weight: 500;
-        letter-spacing: 1px;
-    }
-    .hourly-card-nfl-header .real-feel {
-        font-size: 18px;
-        font-weight: 500;
-        color: black;
-        margin-right: 8px;
-        margin-left: 61px;
-    }
+.daily-card-nfl-header .date span {
+    display: block;
+}
+
+.daily-card-nfl-header .icon {
+    width: 140px;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.daily-card-nfl-header .temp {
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+}
+
+.condition-text{
+    color: #0097e6;
+    font-weight: bold;
+    font-size: 20px;
 }

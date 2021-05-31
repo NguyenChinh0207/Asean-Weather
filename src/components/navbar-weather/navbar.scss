@@ -1,21 +1,26 @@
+.navbar-weather-wrap{
+    padding-top: 20px;
+}
 .btn-navbar{
     border:none;
     background-color: transparent;
     padding:10px 40px;
-    font-size: 23px;
+    font-size: 18px;
+    color: #487eb0;
 }
 .active button,.btn-navbar:hover{
-    color: #ffb142;
-    border-bottom: 3px solid #ffb142;
+    color: #FEB58A;
+    border-bottom: 3px solid #FEB58A;
     font-weight: bold;
 }
 #btn-wrap{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding:0;
     margin: 0 auto;
+    background-color: #a4b0be;
     // margin-top: 30px;
-    border-bottom: grey 1px solid;
+    // border-bottom: grey 1px solid;
     text-align: center;
 }
 .location-wrap{
@@ -29,8 +34,9 @@
 .location-title{ 
     font-size: 30px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 500;
+    color: #2f3542;
 }
 .favourite-wrap button{
     border:none;
@@ -38,14 +44,38 @@
     padding: 0;
 }
 .heart{
-    color: red;
+    color: #DE6262;
     font-size: 30px;
+}
+.heart-btn{
+    color: #DE6262;
+    margin-right: 4px;
 }
 .favourite-wrap{
     display: flex;
     align-items: center;
 }
-
+.shareEmail{
+    display: flex;
+    align-items: center;
+}
 .gmail{
-    color: red !important;
+    color: #DE6262 ;
+    font-size: 30px;
+}
+@media screen and (max-width: 768px){
+    .btn-navbar{
+        padding:4px 6px;
+        font-size: 14px;
+    }
+    .location-title{
+        font-size: 16px;
+    }
+    .heart, .gmail{
+        font-size: 25px;
+    }
+    .facebook{
+        width: 25px;
+    }
+    
 }
